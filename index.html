@@ -233,10 +233,15 @@
     
             function displayContent() {
                 const { name, tel, bio, image } = getQueryParams();
-                document.getElementById('name').textContent = name;
-                document.getElementById('tel').textContent = tel;
-                document.getElementById('bio').textContent = bio;
-                document.getElementById('image').src = image;
+                if (name == "Hadi Agdam") {
+                    window.location.href = "https://hadiagdam.github.io/HadiAgdam/"
+                }
+                else {
+                    document.getElementById('name').textContent = name;
+                    document.getElementById('tel').textContent = tel;
+                    document.getElementById('bio').textContent = bio;
+                    document.getElementById('image').src = image;
+                }
             }
     
             window.onload = displayContent;
